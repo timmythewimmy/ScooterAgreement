@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer of Ownership Agreement for Razor Scooter</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        .page { margin-bottom: 40px; }
+        .paragraph { margin-bottom: 20px; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px; }
+        .signature { font-style: italic; }
+        .download-btn { text-align: center; margin: 20px 0; }
+        .nav-links { text-align: right; margin-top: 20px; }
+        .nav-links a { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Transfer of Ownership Agreement for Razor Scooter</h1>
+    <h3>Document Title: Bill of Sale and Full Transfer of Ownership</h3>
+    <p>Date: October 14, 2025, 07:56 PM PDT</p>
+    <p>Prepared for: Timithy</p>
+    <p>Email: timithyandtimithy30@gmail.com</p>
+
+    <!-- Page 1 -->
+    <div class="page" id="page1">
+        <div class="paragraph">
+            <p>This agreement serves as a formal bill of sale and complete transfer of ownership for one (1) Razor electric scooter (model A, black deck with silver handlebar, approximate serial number visible as "RZR-XXXX") from Aydenn Willams to Timithy. Aydenn Willams hereby agrees to relinquish all rights, title, and interest in the scooter without any monetary compensation or liens attached. The transfer is made freely and voluntarily, with no reservations or conditions.</p>
+            <img src="https://via.placeholder.com/400x200?text=Fingerprint+of+Aydenn" alt="Fingerprint of Aydenn Willams as signature verification">
+        </div>
+        <div class="paragraph">
+            <p>Aydenn Willams confirms that the scooter is in good working condition, free from any defects known to him, and has been used sparingly for personal transportation. He acknowledges that upon signing, Timithy assumes full ownership and responsibility for the scooter's maintenance, use, and any future liabilities. This includes the right to modify, repair, or dispose of the scooter as seen fit.</p>
+            <a href="https://postimg.cc/67Tfdw5B" target="_blank">
+                <img src="https://i.postimg.cc/67Tfdw5B/IMG-856-B19-E7-6721-4-F4-B-A690-FEA231-E370-B5.jpg" border="0" alt="Razor Scooter Image"/>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#page2" id="nextPage">Next Page →</a>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page" id="page2" style="display: none;">
+        <div class="paragraph">
+            <p>Aydenn Willams explicitly grants Timithy full permission to sell, trade, donate, or otherwise transfer the scooter to any third party without further consent or notification required from him. This irrevocable authorization ensures that the new owner can exercise all ownership privileges, including registration if applicable in the jurisdiction of [Your Location]. No warranties are provided beyond the current state as depicted in the attached photographs.</p>
+            <img src="https://via.placeholder.com/400x200?text=Fingerprint+Verification" alt="Fingerprint of Aydenn Willams as additional verification">
+        </div>
+        <div class="paragraph">
+            <p>To finalize this transfer, Aydenn Willams provides his contact email for any record-keeping purposes: aydenn@example.com (or as provided separately). By affixing his fingerprint as a digital signature in the attached images, he affirms the authenticity of this document. This agreement is binding and effective immediately upon execution. Both parties agree that electronic signatures and photographic evidence constitute valid proof under applicable laws. Questions or confirmations can be directed to timithyandtimithy30@gmail.com.</p>
+            <a href="https://postimg.cc/NKj6cYXj" target="_blank">
+                <img src="https://i.postimg.cc/NKj6cYXj/IMG-1245.png" border="0" alt="Full view of Razor Scooter"/>
+            </a>
+        </div>
+        <p class="signature">
+            Signed Electronically:<br>
+            Aydenn Willams (via Fingerprint) _______________________ Date: October 14, 2025, 07:56 PM PDT<br>
+            Timithy _______________________ Date: October 14, 2025, 07:56 PM PDT<br>
+            Witness (Optional): _______________________ Date: _______________
+        </p>
+        <p style="text-align: center; font-size: small;">*This document is provided as a template for informational purposes. Consult a legal professional for binding enforceability in your jurisdiction. Photos referenced are provided images of fingerprints and scooter for evidentiary support.*</p>
+        <div class="nav-links">
+            <a href="#page1" id="prevPage">← Previous Page</a>
+        </div>
+    </div>
+
+    <div class="download-btn">
+        <a href="#" download="Scooter_Ownership_Agreement.html" id="downloadBtn">Download Agreement</a>
+    </div>
+
+    <script>
+        // Page navigation
+        const page1 = document.getElementById('page1');
+        const page2 = document.getElementById('page2');
+
+        document.getElementById('nextPage').addEventListener('click', function(e) {
+            e.preventDefault();
+            page1.style.display = 'none';
+            page2.style.display = 'block';
+        });
+
+        document.getElementById('prevPage').addEventListener('click', function(e) {
+            e.preventDefault();
+            page2.style.display = 'none';
+            page1.style.display = 'block';
+        });
+
+        // Download functionality
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+            const url = URL.createObjectURL(blob);
+            this.href = url;
+        });
+    </script>
+</body>
+</html>
